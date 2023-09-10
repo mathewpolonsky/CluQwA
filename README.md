@@ -8,11 +8,11 @@
 
 
 ## Стек решения:
-* `Python`, `Sentence-Transformers`, `PyTorch`, `FastAPI`.
+`Python`, `Sentence-Transformers`, `PyTorch`, `FastAPI`.
 
 
 ## Файлы
 
-[`cluqwa_main.ipynb`](cluqwa_main.ipynb) — основная часть, в которую входят предобработка ответов пользователей, кластеризация. Решение хостится на Colab через ngrok <a target="_blank" href="https://colab.research.google.com/github.com/mathewpolonsky/CluQwA/cluqwa_main.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a>
+[`cluqwa_main.ipynb`](cluqwa_main.ipynb) — основная часть, в которую входят предобработка ответов пользователей, кластеризация. Решение хостится на Colab через ngrok
 
-[`training mpnet.ipynb`](training(nbsp)mpnet.ipynb) — обучение MPNet на labeled датасете<a target="_blank" href="https://colab.research.google.com/github.com/mathewpolonsky/CluQwA/training mpnet.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a>
+[`training mpnet.ipynb`](training(nbsp)mpnet.ipynb) — обучение MPNet на labeled датасете
