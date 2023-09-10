@@ -8,7 +8,7 @@
 
 
 ## Стек решения:
-`Python`, `Sentence-Transformers`, `PyTorch`, `FastAPI`.
+`Python`, `Sentence-Transformers`, `Transformers`, `PyTorch`, `Plotly`, `FastAPI`.
 
 
 ## Файлы
