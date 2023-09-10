@@ -7,3 +7,7 @@
 
 
 Стек решения: Python, Sentence-Transformers, PyTorch, FastAPI.
+
+![clusterization-example](https://github.com/mathewpolonsky/CluQwA/assets/86847688/fd0742b1-c574-4242-8129-01526c554c8e)
+
+![cluqwa-app-logo](https://github.com/mathewpolonsky/CluQwA/assets/86847688/40edcb85-c995-48aa-b3c3-31613d07edd7)
