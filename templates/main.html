@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Cluqwa-app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <style type="text/css">
+      body {
+        background-color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: grayscale;
+      }
+
+      body > .ui.grid {
+        height: 100%;
+      }
+
+      .column {
+        max-width: 650px;
+      }
+    </style>
+  </head>
+
+  <body id="root">
+    <div class="ui middle aligned center aligned grid">
+      <div class="column">
+        <h1 class="ui red header">Cluqwa-app</h1>
+        <form method="post" action="/upload" id="upload_form" enctype="multipart/form-data" class="ui large form">
+          <div class="ui stacked segment">
+            <div class="field">
+              <p>Cluqwa (CLusterizing QWestion Answering) - сервис позволяющий кластеризировать ответы по вопросам</p>
+            </div>
+            <div class="field">
+              <h3 class="ui red header">Загрузите json файл</h3>
+              <input type="file" id="json_file" name="file">
+            </div>
+            <input type="submit" class="ui fluid large red submit button" value="Кластеризировать">
+            <div id="errorMessage" class="ui message hidden red">
+              <div class="header">Ошибка</div>
+              <p>Пожалуйста загрузите файл в json формате</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script>
+      function validateForm() {
+          const json_file = document.forms["upload_form"]["json_file"].value;
+
+          if (json_file === "") {
+              document.getElementById("errorMessage").classList.remove("hidden");
+              return false;
+          }
+
+          document.getElementById("errorMessage").classList.add("hidden");
+          return true;
+      }
+      
+      const form = document.getElementById("upload_form");
+      form.addEventListener("submit", function (event) {
+          if (!validateForm()) {
+              event.preventDefault();
+          }
+      });
+  </script>
+  </body>
+</html>
