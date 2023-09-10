@@ -1,13 +1,18 @@
 # CluQwA: Clustering for Question Answering
 
+![image](https://github.com/mathewpolonsky/CluQwA/assets/112184397/0e0afea0-194f-4ed8-9ca2-75b9a0831cfb)
 
-Решение задачи объединения ответов в группы схожих по смыслу в рамках тематики опроса.
+Решение команды `DeviAⁱnts` задачи объединения ответов в группы схожих по смыслу в рамках тематики опроса для Хакатона [Цифровой прорыв](https://hacks-ai.ru).
 
-Обработка ответов реализована кластеризацией c учётом тональности с помощью моделей машинного обучения Transformers. Интерфейс решения представлен в виде удобного веб-приложения. Визуализация реализована наглядными облаками слов и круговыми диаграммами.
+Обработка ответов реализована кластеризацией с помощью модели машинного обучения Transformers. Интерфейс решения представлен в виде удобного веб-приложения. Визуализация реализована наглядным Sunburn.
 
 
-Стек решения: Python, Sentence-Transformers, PyTorch, FastAPI.
+## Стек решения:
+* `Python`, `Sentence-Transformers`, `PyTorch`, `FastAPI`.
 
-![clusterization-example](https://github.com/mathewpolonsky/CluQwA/assets/86847688/fd0742b1-c574-4242-8129-01526c554c8e)
 
-![cluqwa-app-logo](https://github.com/mathewpolonsky/CluQwA/assets/86847688/40edcb85-c995-48aa-b3c3-31613d07edd7)
+## Файлы
+
+[`cluqwa_main.ipynb`](cluqwa_main.ipynb) — основная часть, в которую входят предобработка ответов пользователей, кластеризация. Решение хостится на Colab через ngrok <a target="_blank" href="https://colab.research.google.com/github.com/mathewpolonsky/CluQwA/cluqwa_main.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a>
+
+[`training mpnet.ipynb`](training(nbsp)mpnet.ipynb) — обучение MPNet на labeled датасете<a target="_blank" href="https://colab.research.google.com/github.com/mathewpolonsky/CluQwA/training mpnet.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a>
