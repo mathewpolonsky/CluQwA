@@ -1,11 +1,10 @@
-# CluQwA: Clustering for Question Answering
-
-![image](https://github.com/mathewpolonsky/CluQwA/assets/112184397/0e0afea0-194f-4ed8-9ca2-75b9a0831cfb)
+# CluQwA: Clustering for Question Answering – 3 место
 
 Решение команды `DeviAⁱnts` задачи объединения ответов в группы схожих по смыслу в рамках тематики опроса для Хакатона [Цифровой прорыв](https://hacks-ai.ru).
 
 Обработка ответов реализована кластеризацией с помощью модели машинного обучения `Transformers`. Интерфейс решения представлен в виде удобного веб-приложения. Визуализация реализована наглядным Sunburst из `Plotly`.
 
+![image](https://github.com/mathewpolonsky/CluQwA/assets/112184397/0e0afea0-194f-4ed8-9ca2-75b9a0831cfb)
 
 ## Стек решения:
 `Python`, `Sentence-Transformers`, `Transformers`, `PyTorch`, `Plotly`, `FastAPI`.
